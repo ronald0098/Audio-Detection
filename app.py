@@ -124,8 +124,8 @@ def load_my_model():
 
     token      = st.secrets.get("HF_TOKEN", None) or os.environ.get("HF_TOKEN")
     model_path = hf_hub_download(
-        repo_id  = "Ashleyyy04/audioforensics-model",
-        filename = "deepfake_modelv3.keras",
+        repo_id  = "Ashleyyy04/Audiodetectionh5",
+        filename = "deepfake_model.h5",
         token    = token,
     )
     model = load_model(model_path, compile=False)
